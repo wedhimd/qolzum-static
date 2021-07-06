@@ -1,0 +1,1 @@
+# qolzum-static
