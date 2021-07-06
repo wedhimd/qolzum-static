@@ -108,4 +108,46 @@
       }
     }
   }
+
+  .breaking-news-section {
+    padding: 0 30px 0 60px;
+    display: flex;
+
+    @media only screen and (max-width: 600px) {
+      .breaking-news-section {
+        padding: 10px;
+        flex-wrap: wrap;
+      }
+    }
+
+    #btext {
+      width: 200px;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #e08b6c;
+      font-weight: 600;
+      margin: auto 0;
+    }
+
+    marquee {
+      .breaking-news {
+        padding: 30px;
+        color: #627379;
+        text-decoration: none;
+        font-weight: 800;
+
+        &:hover {
+          color: #e08b6c;
+          cursor: pointer;
+        }
+
+        .bntime {
+          display: inline-block;
+          color: rgba(255, 255, 255, 0.5);
+          padding: 0 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
