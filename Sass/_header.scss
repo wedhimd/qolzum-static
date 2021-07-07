@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   // humburger Open styles
   &.open {
     .header__toggle {
@@ -46,14 +46,14 @@
     // mobile menu toggle
     > span {
       display: block;
-      width: 26px;
-      height: 2px;
+      width: 1.625rem;
+      height: 0.125rem;
       background-color: $darkBlue;
       transition: all 300ms ease-in-out;
-      transform-origin: 3px 1px;
+      transform-origin: 0.1875rem 0.0625rem;
 
       &:not(:last-child) {
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
       }
     }
   }
@@ -66,7 +66,7 @@
     background: $white;
     margin-top: 1.5rem;
     padding: 1.625rem;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 
     a {
       display: block;
@@ -90,10 +90,10 @@
         content: "";
         position: absolute;
         display: block;
-        height: 5px;
+        height: 0.3125rem;
         left: 0;
         right: 0;
-        bottom: -30px;
+        bottom: -1.875rem;
         background: linear-gradient(to right, $limeGreen, $robinEggBlue);
         opacity: 0;
         transition: opacity 300ms ease-in-out;
@@ -110,28 +110,70 @@
   }
 
   .breaking-news-section {
-    padding: 0 30px 0 60px;
+    padding: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 400;
     display: flex;
+    // flex-wrap: wrap;
 
-    @media only screen and (max-width: 600px) {
-      .breaking-news-section {
-        padding: 10px;
-        flex-wrap: wrap;
-      }
+    @include breakpoint-up(medium) {
+      padding: 0.8rem 1.875rem 0 3.75rem;
+      height: 3.75rem;
+      font-size: 1rem;
+      font-weight: 600;
     }
 
     #btext {
-      width: 200px;
-      font-size: 16px;
-      text-transform: uppercase;
-      color: #e08b6c;
-      font-weight: 600;
-      margin: auto 0;
+      height: 27px;
+      width: 100px;
+      margin: 0;
+      padding: 9px 10px 11px 14px;
+      border-radius: 0.4rem;
+      color: #e30a0a;
+      text-align: center;
+      background-color: #ddd;
+      z-index: -1;
+      -webkit-clip-path: polygon(
+        100% 0%,
+        100% 54%,
+        100% 100%,
+        25% 100%,
+        0% 50%,
+        25% 0%
+      );
+      clip-path: polygon(
+        100% 0%,
+        100% 54%,
+        100% 100%,
+        25% 100%,
+        0% 50%,
+        25% 0%
+      );
+
+      @include breakpoint-up(medium) {
+        height: 2.25rem;
+        width: 6.5rem;
+        margin: 0;
+        padding: 0.75rem 0 0.875rem 0;
+        border-radius: 0.4rem;
+        color: #e30a0a;
+        text-align: center;
+        background-color: #ddd;
+        z-index: -1;
+        clip-path: polygon(
+          100% 0%,
+          100% 54%,
+          100% 100%,
+          25% 100%,
+          0% 50%,
+          25% 0%
+        );
+      }
     }
 
     marquee {
       .breaking-news {
-        padding: 30px;
+        padding: 1.875rem;
         color: #627379;
         text-decoration: none;
         font-weight: 800;
@@ -144,8 +186,8 @@
         .bntime {
           display: inline-block;
           color: rgba(255, 255, 255, 0.5);
-          padding: 0 10px;
-          font-size: 12px;
+          padding: 0 0.625rem;
+          font-size: 0.75rem;
         }
       }
     }
