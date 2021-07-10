@@ -3,21 +3,20 @@ const body = document.querySelector("body");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const fadeElements = document.querySelectorAll(".has-fade");
-const carouselHero = document.getElementById("#carouselHero");
+const carouselHero = document.getElementById("carouselHero");
 
 // carousel
 
-const screenSize = matchMedia("(max-width: 1023px)") 
+const mediaQueryList = window.matchMedia('(min-width: 1023px)');
 
-function myFunction(screenSize) {
-    if (screenSize.matches) { // If media query matches
-      document.body.style.backgroundColor = "yellow";
-    } else {
-      document.body.style.backgroundColor = "pink";
-    }
+mediaQueryList.addEventListener('change', event => {
+  if (event.matches) {
+    carouselHero.classList.add("w-50");
+  } else {
+    carouselHero.classList.remove("w-50");
   }
-  myFunction(screenSize)
-//   screenSize.addEventListener(myFunction)
+})
+
 //carousel
 btnHamburger.addEventListener("click", function(event){
     event.stopPropagation();
