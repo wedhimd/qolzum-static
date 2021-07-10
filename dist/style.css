@@ -149,12 +149,12 @@ a:hover {
   text-decoration: none;
 }
 
-.container {
+.my-container {
   max-width: 69.375rem;
   margin: 0 auto;
 }
 
-.container--pall {
+.my-container--pall {
   padding-top: 4.375rem;
   padding-right: 1.5rem;
   padding-bottom: 4.375rem;
@@ -162,54 +162,54 @@ a:hover {
 }
 
 @media (min-width: 64em) {
-  .container--pall {
+  .my-container--pall {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
-.container--py {
+.my-container--py {
   padding-top: 4.375rem;
   padding-bottom: 4.375rem;
 }
 
 @media (min-width: 64em) {
-  .container--py {
+  .my-container--py {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
-.container--px {
+.my-container--px {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
 
-.container--pt {
+.my-container--pt {
   padding-top: 4.375rem;
 }
 
 @media (min-width: 64em) {
-  .container--pt {
+  .my-container--pt {
     padding-top: 6rem;
   }
 }
 
-.container--pr {
+.my-container--pr {
   padding-right: 1.5rem;
 }
 
-.container--pb {
+.my-container--pb {
   padding-bottom: 4.375rem;
 }
 
 @media (min-width: 64em) {
-  .container--pb {
+  .my-container--pb {
     padding-bottom: 6rem;
   }
 }
 
-.container--pl {
+.my-container--pl {
   padding-left: 1.5rem;
 }
 
@@ -390,12 +390,19 @@ button:hover,
   display: flex;
 }
 
+.header .breaking-news-section marquee {
+  padding-top: 0.6rem;
+}
+
 @media (min-width: 40em) {
   .header .breaking-news-section {
     padding: 0.8rem 1.875rem 0 3.75rem;
     height: 3.75rem;
     font-size: 1rem;
     font-weight: 600;
+  }
+  .header .breaking-news-section marquee {
+    padding-top: 1rem;
   }
 }
 
@@ -404,28 +411,28 @@ button:hover,
   width: 100px;
   margin: 0;
   padding: 9px 10px 11px 14px;
-  border-radius: 0.4rem;
   color: #e30a0a;
   text-align: center;
   background-color: #ddd;
   z-index: -1;
-  -webkit-clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
 }
 
 @media (min-width: 40em) {
   .header .breaking-news-section #btext {
-    height: 2.25rem;
-    width: 6.5rem;
+    height: 2.5rem;
+    width: 10rem;
     margin: 0;
-    padding: 0.75rem 0 0.875rem 0;
-    border-radius: 0.4rem;
+    padding-top: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 0rem;
     color: #e30a0a;
     text-align: center;
     background-color: #ddd;
     z-index: -1;
-    -webkit-clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-            clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
   }
 }
 
