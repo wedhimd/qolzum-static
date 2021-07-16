@@ -7,15 +7,22 @@ const carouselHero = document.getElementById("carouselHero");
 
 // carousel
 
-const mediaQueryList = window.matchMedia('(min-width: 1023px)');
+// const mediaQueryList = window.matchMedia('screen and (min-width: 1023px)');
 
-mediaQueryList.addEventListener('change', event => {
-  if (event.matches) {
-    carouselHero.classList.add("w-50");
-  } else {
-    carouselHero.classList.remove("w-50");
-  }
-})
+// mediaQueryList.addEventListener('change', event => {
+//   if (event.matches) {
+//     carouselHero.classList.add("w-50");
+//   } else {
+//     carouselHero.classList.remove("w-50");
+//   }
+// })
+
+// if(mediaQueryList.matches) {
+//   carouselHero.classList.add("w-50");
+// }
+// else {
+//   carouselHero.classList.remove("w-50");
+// }
 
 //carousel
 btnHamburger.addEventListener("click", function(event){

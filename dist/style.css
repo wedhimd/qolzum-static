@@ -454,4 +454,138 @@ button:hover,
   padding: 0 0.625rem;
   font-size: 0.75rem;
 }
+
+.popular-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 5%;
+}
+
+.popular-news h2 {
+  margin: 0;
+  padding: 15px 5px 0px;
+  color: #fff;
+}
+
+.popular-news img {
+  width: 100%;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.popular-news section {
+  cursor: pointer;
+}
+
+.popular-news .featured {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.popular-news .featured h2 {
+  background-color: black;
+}
+
+.popular-news #latest {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.popular-news #latest h2 {
+  background-color: darkred;
+}
+
+.popular-news #our-picks {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.popular-news #our-picks h2 {
+  background-color: darkblue;
+}
+
+.popular-news .thumbnail-headings {
+  text-align: right;
+  padding-top: 15px;
+}
+
+.popular-news .carousel,
+.popular-news .news-container {
+  position: relative;
+}
+
+.popular-news .carousel-text {
+  position: absolute;
+  word-wrap: normal;
+  bottom: 5px;
+  z-index: 2;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 0 10px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.popular-news .carousel-text {
+  font-size: 18px;
+}
+
+.popular-news .news-container {
+  font-size: 18px;
+}
+
+.popular-news .news-container:hover img {
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+}
+
+.popular-news .news-container:hover .carousel-text {
+  bottom: 10px;
+}
+
+.popular-news .carousel-date {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+
+@media (max-width: 63.9375em) {
+  .popular-news .breaking-news-section {
+    padding: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .popular-news .featured {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  .popular-news .news-section,
+  .popular-news aside,
+  .popular-news .news-section article,
+  .popular-news .social-links section {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .popular-news aside {
+    border-width: 0;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .popular-news .carousel-text {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
