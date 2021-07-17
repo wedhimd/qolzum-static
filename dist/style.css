@@ -244,7 +244,7 @@ button,
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#00cecb));
   background: linear-gradient(to right, #31d35c, #00cecb);
   border: 0;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   cursor: pointer;
   color: white;
   font-weight: 400;
@@ -407,10 +407,10 @@ button:hover,
 }
 
 .header .breaking-news-section #btext {
-  height: 27px;
-  width: 100px;
+  height: 1.6875rem;
+  width: 6.25rem;
   margin: 0;
-  padding: 9px 10px 11px 14px;
+  padding: 0.5625rem 0.625rem 0.6875rem 0.875rem;
   color: #e30a0a;
   text-align: center;
   background-color: #ddd;
@@ -461,12 +461,12 @@ button:hover,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 30px 5%;
+  margin: 1.875rem 5%;
 }
 
 .popular-news h2 {
   margin: 0;
-  padding: 15px 5px 0px;
+  padding: 0.9375rem 0.3125rem 0rem;
   color: #fff;
 }
 
@@ -514,7 +514,7 @@ button:hover,
 
 .popular-news .thumbnail-headings {
   text-align: right;
-  padding-top: 15px;
+  padding-top: 0.9375rem;
 }
 
 .popular-news .carousel,
@@ -525,22 +525,22 @@ button:hover,
 .popular-news .carousel-text {
   position: absolute;
   word-wrap: normal;
-  bottom: 5px;
+  bottom: 0.3125rem;
   z-index: 2;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bolder;
-  padding: 0 10px;
+  padding: 0 0.625rem;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
 }
 
 .popular-news .carousel-text {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .popular-news .news-container {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .popular-news .news-container:hover img {
@@ -549,20 +549,20 @@ button:hover,
 }
 
 .popular-news .news-container:hover .carousel-text {
-  bottom: 10px;
+  bottom: 0.625rem;
 }
 
 .popular-news .carousel-date {
   display: block;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
 }
 
 @media (max-width: 63.9375em) {
   .popular-news .breaking-news-section {
-    padding: 10px;
+    padding: 0.625rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
