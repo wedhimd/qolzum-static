@@ -23,6 +23,7 @@
         flex: 2;
         h2{
             background-color: black;
+            margin-left: 0.3125rem;
         }
     }
 
@@ -30,6 +31,7 @@
         flex: 1;
         h2{
             background-color: darkred;
+            margin-left: 0.3125rem;
         }
     }
 
@@ -37,6 +39,7 @@
         flex: 1;
         h2{
             background-color: darkblue;
+            margin-left: 0.3125rem;
         }
     }
 
@@ -48,6 +51,8 @@
     .carousel,
    .news-container {
     position: relative;
+    margin-left: 0.3125rem;
+    margin-bottom: 0.3125rem;
 
     
   }
