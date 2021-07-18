@@ -589,8 +589,18 @@ button:hover,
 }
 
 @media (max-width: 39.9375em) {
-  .popular-news .carousel-text {
+  .popular-news .carousel-caption h5 {
     display: none;
+  }
+  .popular-news #latest {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  .popular-news #our-picks {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
   }
 }
 
