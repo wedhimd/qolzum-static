@@ -643,4 +643,31 @@ button:hover,
     margin-top: 0.625rem;
   }
 }
+
+.main-content .article-authors {
+  background-color: aquamarine;
+  color: #000;
+  border-radius: 0.625rem;
+}
+
+.main-content .article-authors img {
+  min-width: 100%;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.main-content .article-authors svg {
+  float: left;
+}
+
+@media (max-width: 39.9375em) {
+  .main-content .article-authors {
+    max-width: 50%;
+  }
+  .main-content .article-authors img {
+    max-width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

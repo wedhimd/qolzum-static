@@ -1,0 +1,32 @@
+.main-content{
+    .article-authors{
+        background-color: aquamarine;
+        color: #000;
+        border-radius: 0.625rem;
+
+        img{
+            
+            min-width: 100%;
+            width: 12.5rem;
+            height: 12.5rem;
+            border-radius: 0.625rem;
+            margin-bottom: 0.625rem;
+        }
+
+        svg{
+            float: left;
+        }
+
+        
+    }
+
+    @include breakpoint-down(small){
+            .article-authors{
+                max-width: 50%;
+                img{
+                    max-width: 50%;
+                }
+            }
+    }
+    
+}
