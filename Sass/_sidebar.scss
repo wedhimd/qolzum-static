@@ -1,0 +1,103 @@
+.sidebar{
+    .widget{
+        margin-bottom: 2.1875rem;
+        .widget-title{
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.5rem 0.625rem;
+        }
+    }
+
+    .latest-news{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+        }
+
+
+        .latest-news-item{
+            margin-top: 0.9375rem;
+
+            .item-thumbnail{
+                float: right;
+                display: block;
+                margin-left: 1.25rem;
+                .latest-news-img{
+                    width: 6.25rem;
+                    height: 6.25rem;
+                }
+            }
+        }
+
+        .news-item-container{
+
+            .news-exerpt{
+                margin-bottom: 0.5rem;
+                font-size: 0.8125rem;
+            }
+            .news-title{
+                a{
+                    color: #333;
+                    text-decoration: none;
+                }
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+
+               
+            }
+
+                .news-date{
+                   font-size: 0.8125rem;
+                   font-style: italic;
+                   color: rgba(51, 51, 51, 0.80);
+                    
+                }
+
+
+                
+
+        }
+        
+
+        
+        
+        
+    }
+    
+    @include breakpoint-up(medium){
+        .latest-news{
+            .news-item-container{
+                .news-title{
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+                
+                .news-exerpt{
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+    }
+
+
+    @include breakpoint-up(large){
+        .latest-news{
+            .news-item-container{
+                .news-title{
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+                
+                .news-exerpt{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        
+    }
+
+}

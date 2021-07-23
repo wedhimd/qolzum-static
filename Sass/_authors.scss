@@ -21,9 +21,9 @@
     }
 
     @include breakpoint-down(small){
-            .article-authors{
+            .article-authors {
                 max-width: 50%;
-                img{
+                img {
                     max-width: 50%;
                 }
             }
