@@ -644,33 +644,6 @@ button:hover,
   }
 }
 
-.main-content .article-authors {
-  background-color: aquamarine;
-  color: #000;
-  border-radius: 0.625rem;
-}
-
-.main-content .article-authors img {
-  min-width: 100%;
-  width: 12.5rem;
-  height: 12.5rem;
-  border-radius: 0.625rem;
-  margin-bottom: 0.625rem;
-}
-
-.main-content .article-authors svg {
-  float: left;
-}
-
-@media (max-width: 39.9375em) {
-  .main-content .article-authors {
-    max-width: 50%;
-  }
-  .main-content .article-authors img {
-    max-width: 50%;
-  }
-}
-
 .sidebar .widget {
   margin-bottom: 2.1875rem;
 }
@@ -834,5 +807,83 @@ button:hover,
     float: right;
     width: 50%;
   }
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+
+.cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
+  max-width: 450px;
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+  border-radius: 0.3125rem;
+  -webkit-box-shadow: 0.1825rem 0.125rem 0.875rem rgba(38, 38, 49, 0.2);
+          box-shadow: 0.1825rem 0.125rem 0.875rem rgba(38, 38, 49, 0.2);
+  font-size: 1rem;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.cards .card:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  -webkit-box-shadow: 0.125rem 0.1875rem 1.125rem rgba(38, 38, 49, 0.4);
+          box-shadow: 0.125rem 0.1875rem 1.125rem rgba(38, 38, 49, 0.4);
+}
+
+.cards .card__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 120px;
+          flex: 0 0 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cards .card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
+
+.cards .card__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.cards .card__snippet {
+  margin-bottom: 0.6rem;
+}
+
+.cards .card__readmore {
+  margin-top: auto;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
