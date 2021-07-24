@@ -747,4 +747,92 @@ button:hover,
     font-size: 0.8rem;
   }
 }
+
+.widget .widget-content .opinion-cards {
+  width: 100%;
+}
+
+.widget .widget-content .opinion-cards .box {
+  max-width: 21.875rem;
+  margin: 0.625rem auto;
+  padding: 0.325rem;
+  border: 0.09375rem solid #757373;
+  border-radius: 5%;
+}
+
+.widget .widget-content .opinion-cards .box .heading {
+  position: relative;
+  background-color: #ece4db;
+  border-radius: 5%;
+}
+
+.widget .widget-content .opinion-cards .box h2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.widget .widget-content .opinion-cards .box h2, .widget .widget-content .opinion-cards .box h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.widget .widget-content .opinion-cards .box h4 {
+  margin-top: 6px;
+}
+
+.widget .widget-content .opinion-cards .box img {
+  max-width: 100px;
+  height: 100px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.3125rem;
+  border-radius: 10%;
+}
+
+.widget .widget-content .opinion-cards .box .heading, .widget .widget-content .opinion-cards .box .text {
+  text-align: center;
+  width: 100%;
+  padding: 0 0.3125rem;
+  min-width: 18.75rem;
+}
+
+.widget .widget-content .opinion-cards .box p {
+  margin: 0.625rem 0;
+}
+
+.widget .widget-content .opinion-cards .box a {
+  display: inline-block;
+  background: #065196;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.7rem 1.25rem 0.5rem;
+  border-radius: 10%;
+}
+
+@media (min-width: 40em) {
+  .widget .widget-content .opinion-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .widget .widget-content .opinion-cards .box {
+    max-width: 43.75rem;
+  }
+  .widget .widget-content .opinion-cards .box img {
+    float: right;
+  }
+  .widget .widget-content .opinion-cards .box .heading, .widget .widget-content .opinion-cards .box .text {
+    float: right;
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
