@@ -111,7 +111,40 @@
             }
         }
     }
-    
+
+    /* Categories */
+    .widget{
+        .widget-content{
+            .categories{
+                
+                ul {
+                    li{
+                        border-bottom: 1px solid #c1c4c7;
+                        margin-right: -1.875rem;
+                        padding-bottom: 0.3125rem;
+                        padding-top: 0.5rem;
+                        font-weight: 400;
+
+                        span{
+                            background-color: #f2552c;
+                            float: left;
+                            color: #fff;
+                            font-size: 0.75rem;
+                            padding: 0.3125rem 0.625rem;
+                        }
+                    }
+
+                    li::before{
+                        content: ">";
+                        font-size: 1rem;
+                        padding-left: 0.625rem;
+                        font-weight: 700;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
 
     @include breakpoint-up(medium){
         .latest-news{
