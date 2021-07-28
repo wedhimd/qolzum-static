@@ -132,6 +132,10 @@
                             font-size: 0.75rem;
                             padding: 0.3125rem 0.625rem;
                         }
+
+                        a:hover{
+                            cursor: pointer;
+                        }
                     }
 
                     li::before{

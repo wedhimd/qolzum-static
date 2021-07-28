@@ -729,6 +729,10 @@ button:hover,
   padding: 0.3125rem 0.625rem;
 }
 
+.sidebar .widget .widget-content .categories ul li a:hover {
+  cursor: pointer;
+}
+
 .sidebar .widget .widget-content .categories ul li::before {
   content: ">";
   font-size: 1rem;
