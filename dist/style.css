@@ -524,7 +524,7 @@ button:hover,
   height: 80px;
   width: 5px;
   margin-right: 16px;
-  background-color: #4ba7f1;
+  background-color: #6aa5f1;
 }
 
 .popular-news .featured h2 {
@@ -713,6 +713,7 @@ button:hover,
 .sidebar .latest-news .latest-news-item .item-thumbnail .latest-news-img {
   width: 6.25rem;
   height: 6.25rem;
+  border-radius: 0.3125rem;
 }
 
 .sidebar .latest-news .news-item-container .news-exerpt {
@@ -827,24 +828,18 @@ button:hover,
 }
 
 .widget .widget-content .opinion-cards .box .heading {
-  position: relative;
   background-color: #ece4db;
   border-radius: 5%;
 }
 
 .widget .widget-content .opinion-cards .box h2 {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-
-.widget .widget-content .opinion-cards .box h2, .widget .widget-content .opinion-cards .box h4 {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0.3125rem;
+  padding-top: 0.3125rem;
 }
 
 .widget .widget-content .opinion-cards .box h4 {
-  margin-top: 6px;
+  margin: 0.375rem 0;
+  padding: 0.375rem;
 }
 
 .widget .widget-content .opinion-cards .box img {
@@ -870,7 +865,7 @@ button:hover,
 
 .widget .widget-content .opinion-cards .box a {
   display: inline-block;
-  background: #065196;
+  background: #6aa5f1;
   color: #ffffff;
   text-decoration: none;
   padding: 0.7rem 1.25rem 0.5rem;

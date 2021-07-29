@@ -27,6 +27,7 @@
                 .latest-news-img{
                     width: 6.25rem;
                     height: 6.25rem;
+                    border-radius: 0.3125rem;
                 }
             }
         }
@@ -101,7 +102,7 @@
                     }
 
                     li:hover{
-                        background-color: #f2552c;
+                        background-color: $titleColor;
                         color: #fff;
                         cursor: pointer;
                         transition: 0.2s;
@@ -126,7 +127,7 @@
                         font-weight: 400;
 
                         span{
-                            background-color: #f2552c;
+                            background-color: $titleColor;
                             float: left;
                             color: #fff;
                             font-size: 0.75rem;
