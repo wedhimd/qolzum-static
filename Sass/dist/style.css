@@ -276,9 +276,49 @@ button:hover,
   }
 }
 
+header {
+  background-color: #111;
+  color: white;
+}
+
+.website-header {
+  padding: 20px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.website-header img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0 30px;
+}
+
+.website-header h1 {
+  margin: auto 0;
+}
+
+.website-header .social-icons {
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 8px;
+}
+
+.website-header .social-icons i {
+  margin: 0 7px;
+  cursor: pointer;
+}
+
 .header {
   position: relative;
-  z-index: 3;
+  z-index: 99;
 }
 
 .header.open .header__toggle > span:first-child {
