@@ -1,19 +1,24 @@
 .page{
     display: flex;
-    background-color: #4e4e4e;
+    flex-direction: column;
+    flex-wrap: wrap;
     &__banner{
         background-color: aqua;
     }
     
     &__main-section{
+        background-color: #e8efe0;
         display: flex;
         flex-direction: column;
         max-width: 100%;
         overflow: hidden;
     }
+
     &__title{
-        font-size: 1.5rem;
-        color: $mainColor;
+            font-size: $font-xlg;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            color: $mainColor;
     }
 
 
@@ -23,6 +28,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        border-radius: 0.3125rem;
     }
 
     &__content{
@@ -31,5 +37,24 @@
         height: 100%;
         padding: 1rem;
         
+    }
+
+    @include breakpoint-down(medium){
+            .container{
+                justify-content: center;
+                .col-8 {
+                    width: 100%;
+                }
+
+                .col-4 {
+                    width: 100%;
+                }
+                    .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+
+                    }
+            }
     }
 }
