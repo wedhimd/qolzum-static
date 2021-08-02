@@ -260,7 +260,7 @@ button:hover,
 
 .header {
   position: relative;
-  z-index: 99;
+  z-index: 3;
 }
 .header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
@@ -842,7 +842,7 @@ footer .container {
 }
 
 footer .container .sec {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 footer .container .sec.about-us {
