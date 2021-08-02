@@ -1,3 +1,10 @@
 bootstrap.bundle.min.js
 bootstrap.min.css
 bootstrap.rtl.min.css
+
+package.json
+package-lock.json
+
+node_modules/*
+
+gulpfile.js

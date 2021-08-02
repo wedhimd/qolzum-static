@@ -1,3 +1,57 @@
+ 
+ .website-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  height: 80px;
+  margin-bottom: 10px;
+
+  img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: -25px 30px;
+  }
+
+  h1 {
+    margin: auto 0;
+    color: white;
+    margin-bottom: -25px;
+  }
+
+  .social-icons {
+    text-align: left;
+    flex-grow: 1;
+    margin-top: 8px;
+
+    i {
+      margin: 0 7px;
+      cursor: pointer;
+    }
+  }
+
+  @include breakpoint-down(small){
+    background-color: yellow;
+    img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    .social-icons {
+      flex-basis: 100%;
+    }
+  
+  }
+}
+
 .header {
   position: relative;
   z-index: 3;
