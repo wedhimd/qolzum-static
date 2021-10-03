@@ -1,5 +1,4 @@
- 
- .website-header {
+.website-header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -19,7 +18,7 @@
   h1 {
     margin: auto 0;
     color: white;
-    margin-bottom: -25px;
+    margin-bottom: 10px;
   }
 
   .social-icons {
@@ -33,12 +32,11 @@
     }
   }
 
-  @include breakpoint-down(small){
-    background-color: yellow;
+  @include breakpoint-down(small) {
     img {
-    width: 35px;
-    height: 35px;
-    padding: 5px;
+      width: 35px;
+      height: 35px;
+      padding: 5px;
     }
 
     h1 {
@@ -48,7 +46,6 @@
     .social-icons {
       flex-basis: 100%;
     }
-  
   }
 }
 

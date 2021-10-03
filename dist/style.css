@@ -230,7 +230,7 @@ button:hover,
 .website-header h1 {
   margin: auto 0;
   color: white;
-  margin-bottom: -25px;
+  margin-bottom: 10px;
 }
 .website-header .social-icons {
   text-align: left;
@@ -242,9 +242,6 @@ button:hover,
   cursor: pointer;
 }
 @media screen and (max-width: 39.9375em) {
-  .website-header {
-    background-color: yellow;
-  }
   .website-header img {
     width: 35px;
     height: 35px;
