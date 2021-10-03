@@ -1,4 +1,2 @@
 # qolzum-static
-
-## live demo
-[qolzum](https://qolzum.netlify.app/)
+ ## live demo [qolzum](https://qolzum.netlify.app/)
